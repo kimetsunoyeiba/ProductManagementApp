@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Management-System</title>
+    <link rel="stylesheet" href="/css/css.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h3 class="mt-5 mb-5"> Product Management System</h3>
+        <div class="mb-5" >
+            <div class="row">
+                <div class="forminfo">
+                    <label for="id">ID</label>
+                    <!-- <label class="validation-error hide" id="IDError">This field is required.</label> -->
+                    <input type="number"
+                    name="id"
+                    class="form-control"
+                    id="id"
+                    placeholder="Enter ID"onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off"/>
+                </div>
+
+                <div class="forminfo">
+                    <label for="name">Name</label>
+                    <!-- <label class="validation-error hide" id="nameError">This field is required.</label> -->
+                    <input type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter Product Name" onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off"/>
+                </div>
+
+                <div class="forminfo">
+                    <label for="price">Price</label>
+                    <!-- <label class="validation-error hide" id="priceError">This field is required.</label> -->
+                    <input type="number"
+                    name="price"
+                    class="form-control"
+                    id="price"
+                    placeholder="Enter Price" onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off"/>
+                </div>
+            </div>
+
+            <div class="btn-class">
+                <button class="btn" id="add" onclick="onFormSubmit()">
+                    Add
+                </button>
+                <button class="btn" id="Update" onclick="addData()">
+                    Update
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="tbl-class">
+        <div class="tbl">
+            <table class="table-1" id="crud">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script src="/js/js.js"></script>
+</body>
+</html>
